@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BamboCode - Hosting botów i serwerów</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e2024, #2c3e50);
+    color: #fff;
+    overflow-x: hidden;
+  }
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    position: relative;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    animation: fadeInUp 1.3s ease forwards;
+  }
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    color: #d1d5db;
+  }
+  .btn-discord {
+    background: #7289da;
+    border: none;
+    padding: 18px 50px;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #7289da;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn-discord:hover {
+    box-shadow: 0 0 40px #99aaff;
+    transform: scale(1.05);
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Responsywność */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.4rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .btn-discord {
+      padding: 15px 35px;
+      font-size: 1.1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>BamboCode</h1>
+    <p>Hosting botów Discord, serwerów Minecraft i stron WWW 24/7 — szybko, stabilnie, profesjonalnie.</p>
+    <a href="https://discord.gg/2WxM6Ux95x" target="_blank" rel="noopener" class="btn-discord">Dołącz do nas na Discordzie</a>
+  </div>
+</section>
+
+</body>
+</html>
