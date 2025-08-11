@@ -3,37 +3,221 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>BamboCode - Hosting botów i serwerów</title>
+<title>BamboCode - Pluginy, Boty i Skrypty Discord</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
 
   body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #1e2024, #2c3e50);
-    color: #fff;
-    overflow-x: hidden;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
   }
+
+  header {
+    padding: 20px 40px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+    color: #4caf50;
+  }
+
+  nav a {
+    color: #eee;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #4caf50;
+  }
+
   .hero {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0 20px;
-    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    background: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
     position: relative;
   }
+
   .hero::before {
     content: "";
     position: absolute;
     top:0; left:0; right:0; bottom:0;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.7);
     z-index: 1;
   }
+
   .hero-content {
     position: relative;
+    z-index: 2;
+    max-width: 800px;
+  }
+
+  .hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #4caf50;
+  }
+
+  .hero-content p {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    color: #ccc;
+  }
+
+  .btn-discord {
+    background: #7289da;
+    border: none;
+    padding: 18px 50px;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #7289da;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn-discord:hover {
+    box-shadow: 0 0 40px #99aaff;
+    transform: scale(1.05);
+  }
+
+  .products {
+    max-width: 1100px;
+    margin: 60px auto 100px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 35px;
+    padding: 0 20px;
+  }
+
+  .product-card {
+    background: #1c2833;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 150, 136, 0.7);
+  }
+
+  .product-card h3 {
+    color: #4caf50;
+    margin-bottom: 15px;
+  }
+
+  .product-card p {
+    color: #bbb;
+    font-size: 1.05rem;
+    line-height: 1.4;
+  }
+
+  .product-card button {
+    margin-top: 25px;
+    padding: 12px 35px;
+    font-size: 1rem;
+    background: #4caf50;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .product-card button:hover {
+    background: #388e3c;
+  }
+
+  footer {
+    background: #111;
+    text-align: center;
+    padding: 25px 20px;
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  /* Responsywność */
+  @media (max-width: 600px) {
+    .hero-content h2 {
+      font-size: 2.4rem;
+    }
+    .hero-content p {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>BamboCode</h1>
+  <nav>
+    <a href="#products">Produkty</a>
+    <a href="#how">Jak to działa?</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Najlepsze pluginy, boty i skrypty Discord</h2>
+    <p>Platforma dla developerów i użytkowników — znajdź lub sprzedaj swoje paczki i boty!</p>
+    <a href="https://discord.gg/2WxM6Ux95x" target="_blank" rel="noopener" class="btn-discord">Dołącz do Discorda</a>
+  </div>
+</section>
+
+<section id="products" class="products">
+  <div class="product-card">
+    <h3>Pluginy Discord</h3>
+    <p>Gotowe pluginy do rozbudowy Twojego bota lub serwera Discord.</p>
+    <button>Zobacz więcej</button>
+  </div>
+  <div class="product-card">
+    <h3>Skrypty</h3>
+    <p>Przydatne skrypty, automatyzacje i narzędzia dla botów Discord.</p>
+    <button>Zobacz więcej</button>
+  </div>
+  <div class="product-card">
+    <h3>Paczki botów</h3>
+    <p>Kompleksowe paczki botów gotowe do uruchomienia i personalizacji.</p>
+    <button>Zobacz więcej</button>
+  </div>
+  <div class="product-card">
+    <h3>Boty Discord</h3>
+    <p>Popularne boty gotowe do dodania na Twój serwer Discord.</p>
+    <button>Zobacz więcej</button>
+  </div>
+</section>
+
+<section id="how" style="max-width: 900px; margin: 0 auto 100px auto; padding: 0 20px; text-align:center; color:#ddd;">
+  <h2>Jak to działa?</h2>
+  <p style="font-size: 1.1rem; margin-bottom: 40px;">Wybierz produkt, pobierz lub kup, a następnie dołącz do naszej społeczności na Discordzie
     z-index: 2;
     max-width: 700px;
     animation: fadeInUp 1.3s ease forwards;
