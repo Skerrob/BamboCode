@@ -217,77 +217,36 @@
 
 <section id="how" style="max-width: 900px; margin: 0 auto 100px auto; padding: 0 20px; text-align:center; color:#ddd;">
   <h2>Jak to działa?</h2>
-  <p style="font-size: 1.1rem; margin-bottom: 40px;">Wybierz produkt, pobierz lub kup, a następnie dołącz do naszej społeczności na Discordzie
-    z-index: 2;
-    max-width: 700px;
-    animation: fadeInUp 1.3s ease forwards;
-  }
-  h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    font-weight: 700;
-    letter-spacing: 2px;
-  }
-  p {
-    font-size: 1.3rem;
-    margin-bottom: 40px;
-    line-height: 1.5;
-    color: #d1d5db;
-  }
-  .btn-discord {
-    background: #7289da;
-    border: none;
-    padding: 18px 50px;
-    font-size: 1.4rem;
-    color: white;
-    font-weight: 700;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 0 20px #7289da;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-  }
-  .btn-discord:hover {
-    box-shadow: 0 0 40px #99aaff;
-    transform: scale(1.05);
-  }
-
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Responsywność */
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 2.4rem;
-    }
-    p {
-      font-size: 1rem;
-    }
-    .btn-discord {
-      padding: 15px 35px;
-      font-size: 1.1rem;
-    }
-  }
-</style>
-</head>
-<body>
-
-<section class="hero">
-  <div class="hero-content">
-    <h1>BamboCode</h1>
-    <p>Hosting botów Discord, serwerów Minecraft i stron WWW 24/7 — szybko, stabilnie, profesjonalnie.</p>
-    <a href="https://discord.gg/2WxM6Ux95x" target="_blank" rel="noopener" class="btn-discord">Dołącz do nas na Discordzie</a>
+  <p style="font-size: 1.1rem; margin-bottom: 40px;">Wybierz produkt, pobierz lub kup, a następnie dołącz do naszej społeczności na Discordzie, aby otrzymać wsparcie i aktualizacje.</p>
+  <div style="display:flex; justify-content:center; gap:40px; flex-wrap: wrap;">
+    <div style="flex:1; min-width:200px; background:#222c35; padding:20px; border-radius:12px; box-shadow: 0 5px 15px rgba(0,0,0,0.4);">
+      <h3>1. Wybierz produkt</h3>
+      <p>Przejrzyj naszą ofertę pluginów, skryptów, botów i paczek.</p>
+    </div>
+    <div style="flex:1; min-width:200px; background:#222c35; padding:20px; border-radius:12px; box-shadow: 0 5px 15px rgba(0,0,0,0.4);">
+      <h3>2. Pobierz lub kup</h3>
+      <p>Zamów online lub pobierz bezpośrednio z naszej platformy.</p>
+    </div>
+    <div style="flex:1; min-width:200px; background:#222c35; padding:20px; border-radius:12px; box-shadow: 0 5px 15px rgba(0,0,0,0.4);">
+      <h3>3. Dołącz do społeczności</h3>
+      <p>Skorzystaj z wsparcia na Discordzie i otrzymuj aktualizacje.</p>
+    </div>
   </div>
 </section>
+
+<section id="contact" style="background:#111; padding:40px 20px; max-width: 600px; margin: 0 auto 60px auto; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+  <h2 style="text-align:center; color:#4caf50; margin-bottom: 25px;">Kontakt</h2>
+  <form style="display:flex; flex-direction: column; gap: 15px;">
+    <input type="text" placeholder="Twoje imię" style="padding: 12px; border-radius: 8px; border:none; font-size: 1rem;" required>
+    <input type="email" placeholder="Twój email" style="padding: 12px; border-radius: 8px; border:none; font-size: 1rem;" required>
+    <textarea placeholder="Wiadomość" rows="4" style="padding: 12px; border-radius: 8px; border:none; font-size: 1rem;" required></textarea>
+    <button type="submit" style="background:#4caf50; color:#fff; border:none; padding:15px; border-radius: 25px; font-weight: 700; cursor:pointer; transition: background 0.3s ease;">Wyślij</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 BamboCode — Wszystkie prawa zastrzeżone
+</footer>
 
 </body>
 </html>
